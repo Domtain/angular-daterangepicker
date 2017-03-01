@@ -26,7 +26,7 @@
         return this;
     });
 
-    picker.directive('dateRangePicker', ['$compile', '$timeout', '$parse', 'dateRangePickerOptions', function ($compile, $timeout, $parse, dateRangePickerOptions) {
+    picker.directive('dateRangePicker', ['$compile', '$timeout', '$parse', '$templateRequest', 'dateRangePickerOptions', function ($compile, $timeout, $parse, $templateRequest, dateRangePickerOptions) {
         return {
             require: 'ngModel',
             restrict: 'A',
